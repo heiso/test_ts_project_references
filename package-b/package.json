@@ -1,0 +1,19 @@
+{
+  "name": "@test_ts_project_references/package-b",
+  "version": "1.0.0",
+  "private": true,
+  "main": "build",
+  "types": "src",
+  "exports": {
+    ".": {
+      "dev": "./src/index.ts",
+      "default": "./build/index.js"
+    }
+  },
+  "dependencies": {
+    "@test_ts_project_references/package-c": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.4"
+  }
+}

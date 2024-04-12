@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.options.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "outDir": "./build",
+    "rootDir": "src",
+    "paths": { "@test_ts_project_references/package-c": ["../package-c"] }
+  },
+  "references": [{ "path": "../package-c/tsconfig.build.json" }]
+}

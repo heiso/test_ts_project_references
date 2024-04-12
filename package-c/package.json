@@ -1,0 +1,16 @@
+{
+  "name": "@test_ts_project_references/package-c",
+  "version": "1.0.0",
+  "private": true,
+  "main": "build",
+  "types": "src",
+  "exports": {
+    ".": {
+      "dev": "./src/index.ts",
+      "default": "./build/index.js"
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.4.4"
+  }
+}

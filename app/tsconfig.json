@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig.options.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "@test_ts_project_references/package-a": ["../package-a"],
+      "@test_ts_project_references/package-b": ["../package-b"]
+    }
+  },
+  "references": [
+    {
+      "path": "../package-a"
+    },
+    {
+      "path": "../package-b"
+    }
+  ]
+}

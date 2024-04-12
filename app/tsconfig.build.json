@@ -1,0 +1,25 @@
+{
+  "extends": "../tsconfig.options.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "noEmit": false,
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": true,
+    "outDir": "./build",
+    "paths": {
+      "@test_ts_project_references/package-a": ["../package-a"],
+      "@test_ts_project_references/package-b": ["../package-b"]
+    }
+  },
+  "references": [
+    {
+      "path": "../package-a/tsconfig.build.json"
+    },
+    {
+      "path": "../package-b/tsconfig.build.json"
+    }
+  ]
+}

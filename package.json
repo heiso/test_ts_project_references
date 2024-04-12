@@ -1,0 +1,29 @@
+{
+  "name": "test_ts_project_references",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "app",
+    "package-a",
+    "package-b",
+    "package-c"
+  ],
+  "scripts": {
+    "dev": "npm -w app run dev",
+    "check": "npm -w app run check",
+    "build": "npm -w app run build",
+    "start": "npm -w app run start",
+    "clean": "rm -rf app/tsconfig.build.tsbuildinfo app/tsconfig.tsbuildinfo app/build/* package-a/tsconfig.build.tsbuildinfo package-a/tsconfig.tsbuildinfo package-a/build/* package-b/tsconfig.build.tsbuildinfo package-b/tsconfig.tsbuildinfo package-b/build/* package-c/tsconfig.build.tsbuildinfo package-c/tsconfig.tsbuildinfo package-c/build/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.4",
+    "esbuild": "^0.20.2",
+    "pm2": "^5.3.1",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.4"
+  }
+}
