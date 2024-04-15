@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.options.json",
-  "files": [],
+  "files": []
   // "compilerOptions": {
   //   // For IDE path resolution
   //   "baseUrl": "./",
@@ -11,10 +11,10 @@
   //     // "@test_ts_project_references/*": ["*/src"]
   //   }
   // },
-  "references": [
-    { "path": "./app" },
-    { "path": "./package-a" },
-    { "path": "./package-b" },
-    { "path": "./package-c" }
-  ]
+  // "references": [
+  //   { "path": "./app" },
+  //   { "path": "./package-a" },
+  //   { "path": "./package-b" },
+  //   { "path": "./package-c" }
+  // ]
 }

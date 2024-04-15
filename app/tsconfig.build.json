@@ -8,11 +8,11 @@
     "declaration": false,
     "declarationMap": false,
     "sourceMap": true,
-    "outDir": "./build",
-    "paths": {
-      "@test_ts_project_references/package-a": ["../package-a"],
-      "@test_ts_project_references/package-b": ["../package-b"]
-    }
+    "outDir": "./build"
+    // "paths": {
+    //   "@test_ts_project_references/package-a": ["../package-a"],
+    //   "@test_ts_project_references/package-b": ["../package-b"]
+    // }
   },
   "references": [
     {
