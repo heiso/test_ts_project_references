@@ -1,0 +1,21 @@
+{
+  "name": "app-b",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "node --inspect=0.0.0.0:9230 --watch --watch-preserve-output --conditions=dev --import tsx src",
+    "check": "tsc --build --watch --preserveWatchOutput",
+    "build": "tsc --build tsconfig.build.json",
+    "start": "node build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@test_ts_project_references/package-a": "*",
+    "@test_ts_project_references/package-b": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.4"
+  }
+}

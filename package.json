@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "workspaces": [
-    "app",
+    "app-a",
+    "app-b",
     "package-a",
     "package-b",
     "package-c"
   ],
   "scripts": {
-    "dev": "npm -w app run dev",
-    "check": "npm -w app run check",
-    "build": "npm -w app run build",
-    "start": "npm -w app run start",
+    "dev": "pm2 start ecosystem.config.js",
+    "stop": "pm2 delete all",
+    "check": "npm -w app-a -w app-b run check",
+    "build": "npm -w app-a -w app-b run build",
+    "start": "npm -w app-a -w app-b run start",
     "clean": "rm -rf app/tsconfig.build.tsbuildinfo app/tsconfig.tsbuildinfo app/build/* package-a/tsconfig.build.tsbuildinfo package-a/tsconfig.tsbuildinfo package-a/build/* package-b/tsconfig.build.tsbuildinfo package-b/tsconfig.tsbuildinfo package-b/build/* package-c/tsconfig.build.tsbuildinfo package-c/tsconfig.tsbuildinfo package-c/build/*"
   },
   "author": "",

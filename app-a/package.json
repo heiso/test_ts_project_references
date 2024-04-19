@@ -1,9 +1,9 @@
 {
-  "name": "app",
+  "name": "app-a",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "node --inspect --watch --watch-preserve-output --conditions=dev --import tsx src",
+    "dev": "node --inspect=0.0.0.0:9229 --watch --watch-preserve-output --conditions=dev --import tsx src",
     "check": "tsc --build --watch --preserveWatchOutput",
     "build": "tsc --build tsconfig.build.json",
     "start": "node build"

@@ -2,9 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "watch",
+      "label": "watch app a",
       "type": "shell",
-      "command": "npm run check",
+      "command": "npm -w app-a run check",
       "isBackground": true,
       "presentation": {
         "revealProblems": "onProblem",
@@ -12,7 +12,7 @@
         "echo": true,
         "reveal": "never",
         "focus": false,
-        "panel": "shared",
+        "panel": "dedicated",
         "showReuseMessage": true,
         "clear": false
       },
@@ -22,7 +22,31 @@
       },
       "problemMatcher": {
         "base": "$tsc-watch",
-        "fileLocation": ["relative", "${workspaceFolder}/app"]
+        "fileLocation": ["relative", "${workspaceFolder}/app-a"]
+      }
+    },
+    {
+      "label": "watch app b",
+      "type": "shell",
+      "command": "npm -w app-b run check",
+      "isBackground": true,
+      "presentation": {
+        "revealProblems": "onProblem",
+        "close": true,
+        "echo": true,
+        "reveal": "never",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "runOptions": {
+        "instanceLimit": 1,
+        "runOn": "folderOpen"
+      },
+      "problemMatcher": {
+        "base": "$tsc-watch",
+        "fileLocation": ["relative", "${workspaceFolder}/app-b"]
       }
     }
   ]
