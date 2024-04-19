@@ -6,7 +6,8 @@
     "dev": "node --inspect=0.0.0.0:9229 --watch --watch-preserve-output --conditions=dev --import tsx src",
     "check": "tsc --build --watch --preserveWatchOutput",
     "build": "tsc --build tsconfig.build.json",
-    "start": "node build"
+    "start": "node build",
+    "ci:check": "tsc --build"
   },
   "author": "",
   "license": "ISC",

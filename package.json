@@ -15,7 +15,8 @@
     "check": "npm -w app-a -w app-b run check",
     "build": "npm -w app-a -w app-b run build",
     "start": "npm -w app-a -w app-b run start",
-    "clean": "rm -rf app/tsconfig.build.tsbuildinfo app/tsconfig.tsbuildinfo app/build/* package-a/tsconfig.build.tsbuildinfo package-a/tsconfig.tsbuildinfo package-a/build/* package-b/tsconfig.build.tsbuildinfo package-b/tsconfig.tsbuildinfo package-b/build/* package-c/tsconfig.build.tsbuildinfo package-c/tsconfig.tsbuildinfo package-c/build/*"
+    "clean": "rm -rf app/tsconfig.build.tsbuildinfo app/tsconfig.tsbuildinfo app/build/* package-a/tsconfig.build.tsbuildinfo package-a/tsconfig.tsbuildinfo package-a/build/* package-b/tsconfig.build.tsbuildinfo package-b/tsconfig.tsbuildinfo package-b/build/* package-c/tsconfig.build.tsbuildinfo package-c/tsconfig.tsbuildinfo package-c/build/*",
+    "ci:check": "npm -w app-a -w app-b run ci:check"
   },
   "author": "",
   "license": "ISC",
